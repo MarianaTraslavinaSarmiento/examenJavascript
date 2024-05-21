@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<div align=\"center\"> <img src=\"./storage/img/vistaEscritorio.gif\" align=\"center\" style=\"width: 100%\" /> </div>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

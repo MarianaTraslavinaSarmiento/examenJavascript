@@ -11,7 +11,7 @@ export const getAllCamisetas = async () =>{
 export const camisetasInformation = async () =>{
 
     let camisetasContainer = document.querySelector("#camisetasContainer")
-    let allCamisetas = getAllCamisetas()
+    let allCamisetas = await getAllCamisetas()
 
     for (let camiseta of allCamisetas){
         camisetasContainer.innerHTML = /*html*/`
@@ -20,7 +20,7 @@ export const camisetasInformation = async () =>{
             <div class="textClothe">
                 <p>${camiseta.nombre}</p>
                 <p>${camiseta.precio}</p>
-                <button>Agregar</button>
+                <button id="agregarCarrito">Agregar</button>
             </div>
         </div>
         `

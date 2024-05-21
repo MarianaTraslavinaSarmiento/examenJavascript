@@ -11,7 +11,7 @@ export const getAllPantalones = async () =>{
 export const pantalonesInformation = async () =>{
 
     let pantalonesContainer = document.querySelector("#pantalonesContainer")
-    let allPantalones = getAllPantalones()
+    let allPantalones = await getAllPantalones()
 
     for (let pantalon of allPantalones){
         pantalonesContainer.innerHTML = /*html*/`
@@ -21,7 +21,7 @@ export const pantalonesInformation = async () =>{
             <div class="textClothe">
                 <p>${pantalon.nombre}</p>
                 <p>${pantalon.precio}</p>
-                <button>Agregar</button>
+                <button id="agregarCarrito">Agregar</button>
             </div>
         </div>
         `

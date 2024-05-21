@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js" type="module" defer></script>
+
 </head>
 <body>
 
@@ -50,7 +51,7 @@
     
                     <img src="./storage/img/shoppingCart.svg" alt="">
                     <p>Carrito</p>
-                    <p>3</p>
+                    <span id="#numeroDeProductos">0</span>
     
                 </a>
 
@@ -66,207 +67,7 @@
                 <h1>Todos los productos</h1>
             </section>
 
-            <section class="clothesGallery">
-
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_01.png" alt="">
-                    <img src="./storage/img/hoodie_01back.png" alt="">
-                    <div class="textClothe">
-                        <p>Abrigo 01</p>
-                        <p>$ 1.000</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_01.png" alt="">
-                    <img src="./storage/img/shirt_01back.png" alt="">
-                    <div class="textClothe">
-                        <p>Camiseta 01</p>
-                        <p>$ 2.000</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pant_01.png" alt="">
-                    <img src="./storage/img/pant_01back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 01</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_02.png" alt="">
-                    <img src="./storage/img/shirt_02back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 02</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pants_02.png" alt="">
-                    <img src="./storage/img/pants_02back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 02</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_02.png" alt="">
-                    <img src="./storage/img/hoodie_02back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Abrigo 02</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_03.png" alt="">
-                    <img src="./storage/img/shirt_03back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 03</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_03.png" alt="">
-                    <img src="./storage/img/hoodie_03back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Abrigo 03</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_04.png" alt="">
-                    <img src="./storage/img/hoodie_04back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Abrigo 04</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pants_03.png" alt="">
-                    <img src="./storage/img/pants_03back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 03</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_04.png" alt="">
-                    <img src="./storage/img/shirt_04back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 04</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_05.png" alt="">
-                    <img src="./storage/img/hoodie_05back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Abrigo 05</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pant_04.png" alt="">
-                    <img src="./storage/img/pant_04back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 04</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pants_05.png" alt="">
-                    <img src="./storage/img/pants_05back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 05</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pants_06.png" alt="">
-                    <img src="./storage/img/pants_06back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 06</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>                    
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/pants_07.png" alt="">
-                    <img src="./storage/img/pants_07back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Pantalón 07</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/hoodie_06.png" alt="">
-                    <img src="./storage/img/hoodie_06back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Abrigo 06</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_05.png" alt="">
-                    <img src="./storage/img/shirt_05back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 05</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_06.png" alt="">
-                    <img src="./storage/img/shirt_06back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 06</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>                    
-                </div>
-                <div class="clothe">
-                    <img src="./storage/img/shirt_07.png" alt="">
-                    <img src="./storage/img/shirt_07back.png" alt="">
-
-                    <div class="textClothe">
-                        <p>Camiseta 07</p>
-                        <p>$ 656.400,00 COP</p>
-                        <button>Agregar</button>
-                    </div>     
-                </div>
+            <section id="productosContainer" class="clothesGallery">
 
             </section>
 

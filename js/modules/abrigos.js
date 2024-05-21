@@ -11,8 +11,8 @@ export const getAllAbrigos = async () =>{
 
 export const abrigosInformation = async () =>{
 
-    let abrigosContainer = document.querySelector("#abrigosContainer")
-    let allAbrigos = getAllAbrigos()
+    let abrigosContainer = document.querySelectorAll("#abrigosContainer")
+    let allAbrigos = await getAllAbrigos()
 
     for (let abrigo of allAbrigos){
         abrigosContainer.innerHTML = /*html*/`
@@ -21,7 +21,7 @@ export const abrigosInformation = async () =>{
         <div class="textClothe">
             <p>${abrigo.nombre}</p>
             <p>${abrigo.precio}</p>
-            <button>Agregar</button>
+            <button id="agregarCarrito">Agregar</button>
         </div>
     </div>`
     }
