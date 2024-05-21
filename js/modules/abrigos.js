@@ -1,6 +1,6 @@
+import { agregarCarrito } from "./agregar.js"
 
-
-export const getAllAbrigos = async () =>{
+const getAllAbrigos = async () =>{
 
     const res = await fetch ("http://172.16.101.146:5999/abrigo")
     const data = await res.json()
@@ -8,8 +8,7 @@ export const getAllAbrigos = async () =>{
     return data
 
 }
-
-export const abrigosInformation = async () =>{
+const abrigosInformation = async () =>{
 
     let abrigosContainer = document.querySelectorAll("#abrigosContainer")
     let allAbrigos = await getAllAbrigos()
@@ -29,3 +28,9 @@ export const abrigosInformation = async () =>{
 
 
 await abrigosInformation()
+
+let agregar = document.querySelector("#agregarCarrito")
+
+for (let button of agregar){
+    button.addEventListener('click', agregarCarrito);
+}

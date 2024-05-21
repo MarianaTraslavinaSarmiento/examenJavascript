@@ -205,7 +205,7 @@ main .clothesGallery{
 
 .clothesGallery .clothe .textClothe p:first-child{
 
-    font-size: 1.2vw;
+    font-size: 0.75vw;
     color: var(--color-white)
     
 }

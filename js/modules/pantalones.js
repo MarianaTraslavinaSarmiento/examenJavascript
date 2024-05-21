@@ -1,4 +1,4 @@
-
+import { agregarCarrito } from "./agregar.js"
 
 export const getAllPantalones = async () =>{
 
@@ -14,7 +14,7 @@ export const pantalonesInformation = async () =>{
     let allPantalones = await getAllPantalones()
 
     for (let pantalon of allPantalones){
-        pantalonesContainer.innerHTML = /*html*/`
+        pantalonesContainer.innerHTML += /*html*/`
         <div class="clothe">
             <img src="${pantalon.imagen}" alt="">
 
@@ -29,3 +29,9 @@ export const pantalonesInformation = async () =>{
 }
 
 await pantalonesInformation()
+
+let agregar = document.querySelector("#agregarCarrito")
+
+for (let button of agregar){
+    button.addEventListener('click', agregarCarrito);
+}
