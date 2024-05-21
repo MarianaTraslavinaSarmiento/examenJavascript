@@ -2,6 +2,8 @@
 export function agregarCarrito(){
 
     let numeroProductos = document.querySelector('#numeroDeProductos');
-    numeroProductos.textContent = +numeroProductos.textContent+1;
+    numeroProductos.textContent= Number(numeroProductos.textContent)+1;
+
+    console.log(numeroProductos.textContent)
 
 }

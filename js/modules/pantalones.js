@@ -1,4 +1,4 @@
-import { agregarCarrito } from "./agregar.js"
+import { agregarCarrito } from "../modules/agregar.js"
 
 export const getAllPantalones = async () =>{
 
@@ -20,7 +20,7 @@ export const pantalonesInformation = async () =>{
 
             <div class="textClothe">
                 <p>${pantalon.nombre}</p>
-                <p>${pantalon.precio}</p>
+                <p>${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(pantalon.precio)}</p>
                 <button id="agregarCarrito">Agregar</button>
             </div>
         </div>

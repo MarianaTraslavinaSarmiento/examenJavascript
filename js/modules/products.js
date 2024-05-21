@@ -1,12 +1,12 @@
-import { agregarCarrito } from "./agregar.js"
+import { agregarCarrito } from "../modules/agregar.js"
 
 
 const getAllProductos = async () =>{
 
     const res = await fetch ("http://172.16.101.146:5999/")
     const data = await res.json()
-
     return data
+    
 }
 
 const productosInformation = async () =>{

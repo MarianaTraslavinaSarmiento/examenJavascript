@@ -1,4 +1,4 @@
-import { agregarCarrito } from "./agregar.js"
+import { agregarCarrito } from "../modules/agregar.js"
 
 
 const getAllAbrigos = async () =>{
@@ -20,17 +20,19 @@ const abrigosInformation = async () =>{
             <img src="${abrigo.imagen}" alt="">
             <div class="textClothe">
                 <p>${abrigo.nombre}</p>
-                <p>${abrigo.precio}</p>
-                <button id="agregarCarrito">Agregar</button>
+                <p>${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
+                    abrigo.precio)}</p>
+                <button id="agregarProducto">Agregar</button>
             </div>
         </div>
         `
     }
 }
 
+
 await abrigosInformation()
 
-let agregar = document.querySelector("#agregarCarrito")
+let agregar = document.querySelector("#agregarProducto")
 
 for (let button of agregar){
     button.addEventListener('click', agregarCarrito);

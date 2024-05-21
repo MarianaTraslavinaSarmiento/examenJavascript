@@ -1,4 +1,4 @@
-import { agregarCarrito } from "./agregar.js"
+import { agregarCarrito } from "../modules/agregar.js"
 
 
 const getAllCamisetas = async () =>{
@@ -20,7 +20,7 @@ const camisetasInformation = async () =>{
             <img src="${camiseta.imagen}" alt="">
             <div class="textClothe">
                 <p>${camiseta.nombre}</p>
-                <p>${camiseta.precio}</p>
+                <p>${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(camiseta.precio)}</p>
                 <button id="agregarCarrito">Agregar</button>
             </div>
         </div>
