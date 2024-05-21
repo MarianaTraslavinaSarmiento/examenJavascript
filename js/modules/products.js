@@ -1,4 +1,7 @@
-const getAllProducts = async () =>{
+import { agregarCarrito } from "./agregar.js"
+
+
+const getAllProductos = async () =>{
 
     const res = await fetch ("http://172.16.101.146:5999/")
     const data = await res.json()
@@ -6,12 +9,12 @@ const getAllProducts = async () =>{
     return data
 }
 
-const productsInformation = async () =>{
+const productosInformation = async () =>{
 
     let productosContainer = document.querySelector("#productosContainer")
-    let allProducts = await getAllProducts()
+    let allProductos = await getAllProductos()
 
-    for (let producto of allProducts){
+    for (let producto of allProductos){
         productosContainer.innerHTML += /*html*/`
         <div class="clothe">
             <img src="${producto.imagen}" alt="">
@@ -25,11 +28,10 @@ const productsInformation = async () =>{
     }
 }
 
-await productsInformation()
+await productosInformation()
 
 let agregar = document.querySelector("#agregarCarrito")
 
 for (let button of agregar){
     button.addEventListener('click', agregarCarrito);
 }
-
