@@ -1,0 +1,15 @@
+{
+  "name": "proyectoweb",
+  "version": "1.0.0",
+  "description": "<div align=\"center\"> <img src=\"./storage/img/vistaEscritorio.gif\" align=\"center\" style=\"width: 100%\" /> </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.0"
+  }
+}
